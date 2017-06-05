@@ -15,7 +15,7 @@
       
         <link rel="shortcut icon" href="../../../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.6.3">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.1">
     
     
       
@@ -23,12 +23,12 @@
       
     
     
-      <script src="../../../assets/javascripts/modernizr-56ade86843.js"></script>
+      <script src="../../../assets/javascripts/modernizr-1df76c4e58.js"></script>
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application-e2807e330f.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application-f98ca285f9.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/application-f78e5cb881.palette.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-8817cfa535.palette.css">
       
     
     
@@ -42,7 +42,7 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
-      <link rel="stylesheet" href="../../../css/spoilers.css">
+      <link rel="stylesheet" href="../../../css/details.css">
     
     
   </head>
@@ -107,7 +107,7 @@
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
           <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
             Type to start searching
           </div>
@@ -1111,7 +1111,7 @@ gene.</li>
 <p>b)   ​Which gene had the lowest FM Q value?</p>
 <p>c)   Why don’t the genes with the lowest Q values also have the
 highest sample frequency value?</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><p>a)  TTN has the highest number of samples with mutations. There are
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><p>a)  TTN has the highest number of samples with mutations. There are
     265 out of 327 samples with mutations in TTN.</p><p>b)  TP53 or PTEN</p><p>c)  ​The P value calculation takes into account the length of the
     coding sequence of the gene, the mutation rate of the nucleotides
     contained within it and the functional consequences of those
@@ -1135,7 +1135,7 @@ with mutations at amino acid position 132 of IDH1.</p>
 <p class="admonition-title">Question</p>
 <p>Why are the oncogenes more likely to have clustered mutations and the
 tumour suppressor genes less likely?</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><p>Gain of function mutations are required to activate oncogenes and so
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><p>Gain of function mutations are required to activate oncogenes and so
 only key residues in the protein will result in activation. Tumour
 suppressors are frequently affected by loss of function mutations and
 deletions. A truncating mutation or frameshift indel can occur in any
@@ -1163,7 +1163,7 @@ cancer but focus on patients with heart, lung and blood disorders.</p>
 <p class="admonition-title">Question</p>
 <p>Can we draw any conclusions from the high number of ESP mutations and
 dbSNP references for TTN?</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><p>Functional studies would be the only way to prove conclusively if TTN
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><p>Functional studies would be the only way to prove conclusively if TTN
 mutations were cancer driver mutations. The high number of samples in
 the ESP cohort that have mutations in common with the cancer cohorts
 could indicate that TTN mutation may not be unique to the cancer
@@ -1187,7 +1187,7 @@ category of which there are four; high, medium, low and none.</p>
 <p>Can you find out what the nucleotide change details for the most common
 BRAF mutation that results in V600E amino acid change in the cohort?
 Sort the data on the gene symbol column to make this easier.</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><p>It is an A&gt;T at position chr7:140453136 identified in 127 samples.</p></details></div>
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><p>It is an A&gt;T at position chr7:140453136 identified in 127 samples.</p></details></div>
 </div>
 <p><br>
 The <code class="codehilite">variant_samples.tsv</code> worksheet allows you to find out the sample
@@ -1201,7 +1201,7 @@ interested in.</p>
 <p>Can you use the position that you found in the question above to locate
 the sample IDs for the 3 cases with a V600R BRAF mutation that is caused
 by a nucleotide change of AC/CT starting at chr7:140453136?</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><p>TCGA-D3-A1QA-06A-11D-A196-08, TCGA-EB-A3XC-01A-11D-A23B-08, TCGA-ER-A193-06A-12D-A197-08</p></details></div>
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><p>TCGA-D3-A1QA-06A-11D-A196-08, TCGA-EB-A3XC-01A-11D-A23B-08, TCGA-ER-A193-06A-12D-A197-08</p></details></div>
 </div>
 <hr />
 <h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
@@ -1282,12 +1282,14 @@ by a nucleotide change of AC/CT starting at chr7:140453136?</p>
       
     </div>
     
-      <script src="../../../assets/javascripts/application-6b4ff16fa7.js"></script>
+      <script src="../../../assets/javascripts/application-e3caa82af6.js"></script>
+      
+      
       <script>app.initialize({url:{base:"../../.."}})</script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       
-        <script src="../../../js/spoilers.js"></script>
+        <script src="../../../js/details.js"></script>
       
     
     

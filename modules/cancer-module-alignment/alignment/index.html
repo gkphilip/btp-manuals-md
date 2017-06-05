@@ -15,7 +15,7 @@
       
         <link rel="shortcut icon" href="../../../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.6.3">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.1">
     
     
       
@@ -23,12 +23,12 @@
       
     
     
-      <script src="../../../assets/javascripts/modernizr-56ade86843.js"></script>
+      <script src="../../../assets/javascripts/modernizr-1df76c4e58.js"></script>
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application-e2807e330f.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application-f98ca285f9.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/application-f78e5cb881.palette.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-8817cfa535.palette.css">
       
     
     
@@ -42,7 +42,7 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
-      <link rel="stylesheet" href="../../../css/spoilers.css">
+      <link rel="stylesheet" href="../../../css/details.css">
     
     
   </head>
@@ -103,7 +103,7 @@
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
           <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
             Type to start searching
           </div>
@@ -1041,7 +1041,7 @@ information such as mapping position.</p>
 <p class="admonition-title">Question</p>
 <p>Can you distinguish between the header of the SAM format and the actual
 alignments?</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><p>The header line starts with the letter ‘@’ i.e.<br />
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><p>The header line starts with the letter ‘@’ i.e.<br />
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>@HD  VN:1.0       SO:unsorted             
@@ -1058,7 +1058,7 @@ SRR002012.48   16   chr1
 <div class="admonition note">
 <p class="admonition-title">Question</p>
 <p>What kind of information does the header provide?</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><ul><li><p>@HD: Header line; VN: Format version; SO: the sort order of
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><ul><li><p>@HD: Header line; VN: Format version; SO: the sort order of
     alignments.</p></li><li><p>@SQ: Reference sequence information; SN: reference sequence name;
     LN: reference sequence length.</p></li><li><p>@PG: Program; ID: Program record identifier; VN: Program
     version; CL: the command line that produces the alignment.</p></li></ul></details></div>
@@ -1066,7 +1066,7 @@ SRR002012.48   16   chr1
 <div class="admonition note">
 <p class="admonition-title">Question</p>
 <p>To which chromosome are the reads mapped?</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><p>Chromosome 1.</p></details></div>
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><p>Chromosome 1.</p></details></div>
 </div>
 <hr />
 <h2 id="manipulating-sam-output">Manipulating SAM output<a class="headerlink" href="#manipulating-sam-output" title="Permanent link">&para;</a></h2>
@@ -1124,7 +1124,7 @@ file.<br />
 <p class="admonition-title">Question</p>
 <p>How can you quickly find out whether a BAM file is already coordinate
 sorted or not?</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><p>Use samtools view command to look at the SAM header.</p></details></div>
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><p>Use samtools view command to look at the SAM header.</p></details></div>
 </div>
                 
                   
@@ -1199,12 +1199,14 @@ sorted or not?</p>
       
     </div>
     
-      <script src="../../../assets/javascripts/application-6b4ff16fa7.js"></script>
+      <script src="../../../assets/javascripts/application-e3caa82af6.js"></script>
+      
+      
       <script>app.initialize({url:{base:"../../.."}})</script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       
-        <script src="../../../js/spoilers.js"></script>
+        <script src="../../../js/details.js"></script>
       
     
     

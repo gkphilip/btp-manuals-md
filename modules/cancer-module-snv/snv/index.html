@@ -15,7 +15,7 @@
       
         <link rel="shortcut icon" href="../../../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.6.3">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.1">
     
     
       
@@ -23,12 +23,12 @@
       
     
     
-      <script src="../../../assets/javascripts/modernizr-56ade86843.js"></script>
+      <script src="../../../assets/javascripts/modernizr-1df76c4e58.js"></script>
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application-e2807e330f.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application-f98ca285f9.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/application-f78e5cb881.palette.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-8817cfa535.palette.css">
       
     
     
@@ -42,7 +42,7 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
-      <link rel="stylesheet" href="../../../css/spoilers.css">
+      <link rel="stylesheet" href="../../../css/details.css">
     
     
   </head>
@@ -103,7 +103,7 @@
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
           <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
             Type to start searching
           </div>
@@ -1308,7 +1308,7 @@ site to understand what is going on with your reads.</p>
 <div class="admonition note">
 <p class="admonition-title">Question</p>
 <p>There are 3 unique flags, what do they mean? The flag is the second column.</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><p><strong>129:</strong><br />
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><p><strong>129:</strong><br />
 read paired<br />
 second in pair  </p><p><strong>113:</strong><br />
 read paired<br />
@@ -1328,9 +1328,9 @@ There are lots of possible different flags, let’s look at a few more</p>
 <div class="admonition note">
 <p class="admonition-title">Question</p>
 <p>Let’s take the last read, which looks properly paired and find its mate pair.</p>
-<div class="admonition hint"><details class="spoilers"><summary><strong>Hint</strong></summary><p>a)    Instead of using <code class="codehilite">head</code>, what unix command could we pipe the output to?<br />
+<div class="admonition hint"><details><summary><strong>Hint</strong></summary><p>a)    Instead of using <code class="codehilite">head</code>, what unix command could we pipe the output to?<br />
 b)    Once we’ve found both reads, the command can be stopped by typing <code class="codehilite">CTRL-C</code>  </p></details></div>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>samtools view alignment/normal/normal.sorted.bam | grep HWI-ST478_0133:4:2205:14675:32513
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>samtools view alignment/normal/normal.sorted.bam | grep HWI-ST478_0133:4:2205:14675:32513
 </pre></div>
 </td></tr></table>
 </details></div>
@@ -1338,13 +1338,13 @@ b)    Once we’ve found both reads, the command can be stopped by typing <code 
 <div class="admonition note">
 <p class="admonition-title">Question</p>
 <p>Using the cigar string, what can we tell about the alignment of the mate pair?</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><p>The mate pair has a less convincing alignment with two insertions and
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><p>The mate pair has a less convincing alignment with two insertions and
 soft clipping reported.</p></details></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Question</p>
 <p>How might the alignment information from the original read be used by the aligner?</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><p>Even though the alignment of the mate pair is questionable the presence
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><p>Even though the alignment of the mate pair is questionable the presence
   of it’s properly paired mate helps the aligner in deciding where to put
   the less-certain read.</p></details></div>
 </div>
@@ -1352,8 +1352,8 @@ soft clipping reported.</p></details></div>
 <div class="admonition note">
 <p class="admonition-title">Question</p>
 <p>How many reads mapped and unmapped were there?</p>
-<div class="admonition hint"><details class="spoilers"><summary><strong>Hint</strong></summary><p>Look at the samtools view help menu by typing <code class="codehilite">samtools view</code> without any arguments</p></details></div>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>samtools view -c -f4 alignment/normal/normal.sorted.bam
+<div class="admonition hint"><details><summary><strong>Hint</strong></summary><p>Look at the samtools view help menu by typing <code class="codehilite">samtools view</code> without any arguments</p></details></div>
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>samtools view -c -f4 alignment/normal/normal.sorted.bam
 </pre></div>
 </td></tr></table>
 77229
@@ -1424,7 +1424,7 @@ mv tumour.sorted.realigned.ba* alignment/tumour/
 <div class="admonition note">
 <p class="admonition-title">Question</p>
 <p>Why did we use both normal and tumor together?</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><p>Because if a region needs realignment, maybe one of the samples in the
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><p>Because if a region needs realignment, maybe one of the samples in the
 pair has less reads or was excluded from the target creation.
 This makes sure the normal and tumor are all in-sync for the somatic
 calling step.</p></details></div>
@@ -1432,7 +1432,7 @@ calling step.</p></details></div>
 <div class="admonition note">
 <p class="admonition-title">Question</p>
 <p>How many regions did it think needed cleaning?</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>wc -l alignment/normal/realign.intervals
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>wc -l alignment/normal/realign.intervals
 </pre></div>
 </td></tr></table>
 <p>27300</p></details></div>
@@ -1451,7 +1451,7 @@ when there is a microsatellite or homopolymer. e.g.</p>
 <div class="admonition note">
 <p class="admonition-title">Question</p>
 <p>Why is it important?</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><p>This makes it easier for downstream analysis tools.</p><p>For NGS analysis, the convention is to left align indels.</p><p>This is only really needed when calling variants with legacy locus-based
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><p>This makes it easier for downstream analysis tools.</p><p>For NGS analysis, the convention is to left align indels.</p><p>This is only really needed when calling variants with legacy locus-based
 tools such as samtools or GATK UnifiedGenotyper. Otherwise you will have
 worse performance and accuracy.</p><p>With more sophisticated tools (like GATK HaplotypeCaller) that involve
 reconstructing haplotypes (e.g. through reassembly), the problem of
@@ -1497,18 +1497,18 @@ We use Picard to do this:</p>
 <div class="admonition note">
 <p class="admonition-title">Question</p>
 <p>What are duplicate reads?</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><p>Different read pairs representing the same initial DNA fragment.</p></details></div>
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><p>Different read pairs representing the same initial DNA fragment.</p></details></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Question</p>
 <p>What are they caused by?</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><ul><li>PCR reactions (PCR duplicates).  </li><li>Some clusters that are thought of being separate in the flowcell but are
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><ul><li>PCR reactions (PCR duplicates).  </li><li>Some clusters that are thought of being separate in the flowcell but are
 the same (optical duplicates)</li></ul></details></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Question</p>
 <p>What are the ways to detect them?</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><ol><li><p>Picard and samtools uses the alignment positions:  </p><ul><li>Both 5’ ends of both reads need to have the same positions.</li><li>Each reads have to be on the same strand as well.</li></ul></li><li><p>Another method is to use a kmer approach:</p><ul><li>Take a part of both ends of the fragment.</li><li>Build a hash table.</li><li>Count the similar hits.</li></ul></li><li><p>Brute force, compare all the sequences.</p></li></ol></details></div>
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><ol><li><p>Picard and samtools uses the alignment positions:  </p><ul><li>Both 5’ ends of both reads need to have the same positions.</li><li>Each reads have to be on the same strand as well.</li></ul></li><li><p>Another method is to use a kmer approach:</p><ul><li>Take a part of both ends of the fragment.</li><li>Build a hash table.</li><li>Count the similar hits.</li></ul></li><li><p>Brute force, compare all the sequences.</p></li></ol></details></div>
 </div>
 <p><br>
 Here we will use Picard&rsquo;s approach:</p>
@@ -1557,13 +1557,13 @@ We can look in the metrics output to see what happened.</p>
 <div class="admonition note">
 <p class="admonition-title">Question</p>
 <p>What percent of reads are duplicates?</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><p>0.046996%</p></details></div>
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><p>0.046996%</p></details></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Question</p>
 <p>Often, we have multiple libraries and when this occurs separate measures
 are calculated for each library. Why is this important to not combine everything?</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><ul><li>Each library represents a set of different DNA fragments.</li><li>Each library involves different PCR reactions</li></ul><p>PCR duplicates can not occur between fragments of two different
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><ul><li>Each library represents a set of different DNA fragments.</li><li>Each library involves different PCR reactions</li></ul><p>PCR duplicates can not occur between fragments of two different
 libraries. However, similar fragments could be found between
 libraries when the coverage is high.</p></details></div>
 </div>
@@ -1571,7 +1571,7 @@ libraries when the coverage is high.</p></details></div>
 <div class="admonition note">
 <p class="admonition-title">Question</p>
 <p>Why do we need to recalibrate base quality scores?</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><p>The vendors tend to inflate the values of the bases in the reads. The
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><p>The vendors tend to inflate the values of the bases in the reads. The
 recalibration tries to lower the scores of some biased motifs for some
 technologies.</p></details></div>
 </div>
@@ -1680,7 +1680,7 @@ less -S alignment/tumour/tumour.sorted.dup.recal.coverage.sample_interval_summar
 <div class="admonition note">
 <p class="admonition-title">Question</p>
 <p>Does the coverage fit with the expectation?</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><ul><li><p>Yes the mean coverage of the region is 25x.</p></li><li><p><code class="codehilite">summaryCoverageThreshold</code> is a useful function to see if your coverage is
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><ul><li><p>Yes the mean coverage of the region is 25x.</p></li><li><p><code class="codehilite">summaryCoverageThreshold</code> is a useful function to see if your coverage is
 uniform.</p></li><li><p>Another way is to compare the mean to the median. If both are quite
 different that means something is wrong in your coverage.</p></li></ul></details></div>
 </div>
@@ -1722,7 +1722,7 @@ less -S alignment/tumour/tumour.sorted.dup.recal.metric.insertSize.tsv
 <div class="admonition note">
 <p class="admonition-title">Question</p>
 <p>How do the two libraries compare?    </p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><p>The tumour sample has a larger median insert size than the
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><p>The tumour sample has a larger median insert size than the
 normal sample (405 vs. 329).</p></details></div>
 </div>
 <h3 id="step-3-bam-qc-alignment-metrics">Step 3: BAM QC: Alignment metrics<a class="headerlink" href="#step-3-bam-qc-alignment-metrics" title="Permanent link">&para;</a></h3>
@@ -1761,7 +1761,7 @@ less -S alignment/tumour/tumour.sorted.dup.recal.metric.alignment.tsv
 <div class="admonition note">
 <p class="admonition-title">Question</p>
 <p>Do you think the sample and the reference genome fit together?</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><p>Yes, 99% of the reads have been aligned.<br />
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><p>Yes, 99% of the reads have been aligned.<br />
 Usually, we consider:</p><ul><li>A good alignment if &gt; 85%</li><li>Reference assembly issues if [60-85]%</li><li>Probably a mismatch between sample and ref if &lt; 60 %</li></ul></details></div>
 </div>
 <hr />
@@ -1946,7 +1946,7 @@ Fields vary from caller to caller. Some values are are almost always there:</p>
 <div class="admonition note">
 <p class="admonition-title">Question</p>
 <p>Looking at the three vcf files, how can we detect only somatic variants?</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><p>Some commands to find somatic variant in the vcf file:</p><p>varscan:</p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>grep SOMATIC variant_calling/varscan.snp.vcf
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><p>Some commands to find somatic variant in the vcf file:</p><p>varscan:</p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>grep SOMATIC variant_calling/varscan.snp.vcf
 </pre></div>
 </td></tr></table>
 <p>MuTecT:</p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>grep -v REJECT variant_calling/mutect.vcf | grep -v &quot;^#&quot;
@@ -2294,12 +2294,14 @@ the various datasets.</p>
       
     </div>
     
-      <script src="../../../assets/javascripts/application-6b4ff16fa7.js"></script>
+      <script src="../../../assets/javascripts/application-e3caa82af6.js"></script>
+      
+      
       <script>app.initialize({url:{base:"../../.."}})</script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       
-        <script src="../../../js/spoilers.js"></script>
+        <script src="../../../js/details.js"></script>
       
     
     

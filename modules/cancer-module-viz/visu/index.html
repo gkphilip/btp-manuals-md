@@ -15,7 +15,7 @@
       
         <link rel="shortcut icon" href="../../../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.6.3">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.1">
     
     
       
@@ -23,12 +23,12 @@
       
     
     
-      <script src="../../../assets/javascripts/modernizr-56ade86843.js"></script>
+      <script src="../../../assets/javascripts/modernizr-1df76c4e58.js"></script>
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application-e2807e330f.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application-f98ca285f9.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/application-f78e5cb881.palette.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-8817cfa535.palette.css">
       
     
     
@@ -42,7 +42,7 @@
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
-      <link rel="stylesheet" href="../../../css/spoilers.css">
+      <link rel="stylesheet" href="../../../css/details.css">
     
     
   </head>
@@ -103,7 +103,7 @@
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
           <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
             Type to start searching
           </div>
@@ -908,7 +908,7 @@ less data/scones.somatic.30k.tsv
 <div class="admonition note">
 <p class="admonition-title">Question</p>
 <p>What can you see from this data?</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><ul><li><p>the filtered output of 3 different software: Mutect (SNVs),
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><ul><li><p>the filtered output of 3 different software: Mutect (SNVs),
 Delly (SVs), SCoNEs (CNVs).</p></li><li><p>The 3 files show 2 different formats (vcf, tsv).</p></li><li><p>Almost all type of variants are represented here: mutations,
 deletion, inversion, translocation, large amplification and deletion
 (CNVs).</p></li></ul></details></div>
@@ -916,7 +916,7 @@ deletion, inversion, translocation, large amplification and deletion
 <div class="admonition note">
 <p class="admonition-title">Question</p>
 <p>Why don’t we use the vcf format for all types of calls?</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><p>The 1000 Genomes project tries to use/include SV calls in the vcf format.
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><p>The 1000 Genomes project tries to use/include SV calls in the vcf format.
 Some tools like Delly use this format for SVs. It is a good idea to try to
 include everything together but this not the be the best way to handle SVs and
 CNVs.</p></details></div>
@@ -924,7 +924,7 @@ CNVs.</p></details></div>
 <div class="admonition note">
 <p class="admonition-title">Question</p>
 <p>Why?</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><p>Due to the nature of these calls, you can not easily integrate the
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><p>Due to the nature of these calls, you can not easily integrate the
 positional information of the two breakpoints (that could be located
 far away or in an other chromosome) using a single position format.</p></details></div>
 </div>
@@ -1093,7 +1093,7 @@ You should obtain a plot like this one:</p>
 <div class="admonition note">
 <p class="admonition-title">Question</p>
 <p>Could you generate the graph and save it into a pdf file?</p>
-<div class="admonition success"><details class="spoilers"><summary><strong>Answer</strong></summary><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+<div class="admonition success"><details><summary><strong>Answer</strong></summary><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>circos.clear<span class="p">()</span>
@@ -1194,12 +1194,14 @@ license.</p>
       
     </div>
     
-      <script src="../../../assets/javascripts/application-6b4ff16fa7.js"></script>
+      <script src="../../../assets/javascripts/application-e3caa82af6.js"></script>
+      
+      
       <script>app.initialize({url:{base:"../../.."}})</script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       
-        <script src="../../../js/spoilers.js"></script>
+        <script src="../../../js/details.js"></script>
       
     
     
